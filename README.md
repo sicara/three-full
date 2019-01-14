@@ -1,3 +1,25 @@
+three-full-sicara
+===================
+
+Ce repository est utilisé comme package pour le projet [colas-rail-cirrostratus](https://github.com/sicara/colas-rail-cirrostratus).
+
+**=> Ne pas supprimer si ce dernier projet est toujours en prod.**
+
+Il est utilisé pour avoir accès à la librairie [threejs](https://threejs.org/) qui est une surcouche d'OpenGL (moteur de rendu graphique).
+Néanmoins, cette librairie n'est pas adaptée à la syntaxe `import` de ECMAScript 2015.
+
+Quelqu'un a donc forké le repo [threejs](https://github.com/mrdoob/three.js/) pour donner [three-full](https://github.com/Itee/three-full), dont 2 objectifs sont :
+
+- Pouvoir importer les différents éléments de threejs avec cette syntaxe ;
+- Intégrer au code source les exemples qui étaient donnés dans threejs et qui pouvaient être utilisés par les différents utilisateurs de la librairie.
+
+Ce repository est donc un fork du repo three-full avec 2 loaders additionnels :
+
+- PCDLoader2 ;
+- LASLoader.
+
+Ci-dessous la doc de three-full avec le flow de développement (en particulier le build) si vous souhaitez ajouter de nouvelles features.
+
 three-full
 ================
 
